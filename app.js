@@ -19,16 +19,23 @@ function pageTransition() {
   allSections.addEventListener('click', (e) => {
     const id = e.target.dataset.id;
     if (id) {
-      sectBtns.forEach((btn) => {
-        btn.classList.remove('active');
-      });
-      e.target.classList.add('active');
+      // don't need this
+      // sectBtns.forEach((btn) => {
+      //   btn.classList.remove('active');
+      // });
+      // e.target.classList.add('active');
       sections.forEach((section) => {
         section.classList.remove('active');
       });
       const element = document.getElementById(id);
       element.classList.add('active');
     }
+  });
+  //toggle theme
+  const themeBtn = document.querySelector('.theme-btn');
+  themeBtn.addEventListener('click', () => {
+    let element = document.body;
+    element.classList.toggle('light-mode');
   });
 }
 pageTransition();
