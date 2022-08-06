@@ -8,6 +8,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #27ae60;
+  --color-overlay: #27ae5f23;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-0: #f8f8f8;
@@ -24,6 +25,7 @@
 .light-mode {
   --color-primary: #ffffff;
   --color-secondary: #f56692;
+  --color-overlay: #f566911c;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -166,7 +168,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
+  min-height: 100vh;
   .left-header {
     display: flex;
     align-items: center;
@@ -426,6 +428,20 @@ section {
   .portfolio-item {
     position: relative;
     border-radius: 15px;
+    .image {
+      position: inherit;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-overlay);
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+      }
+    }
     img {
       width: 100%;
       height: 300px;
@@ -657,3 +673,5 @@ section {
     }
   }
 }
+
+@import './media';

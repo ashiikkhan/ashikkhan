@@ -1,0 +1,108 @@
+@media screen and (max-width: 600px) {
+  // header section
+  section {
+    padding: 2rem 2.5rem !important;
+  }
+  header {
+    padding: 0;
+  }
+
+  header .right-header {
+    padding: 1rem !important;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header {
+    .h-shape {
+      display: none;
+    }
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+    .name {
+      font-size: 2.5rem !important;
+    }
+  }
+  .header-content .left-header .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+  //   about section
+  .about-container {
+    grid-template-columns: 1fr;
+    .right-about {
+      grid-template-columns: 1fr;
+      padding-top: 2.5rem;
+    }
+  }
+  .left-about {
+    padding-right: 0 !important;
+  }
+  .about-stats {
+    .progress-bars {
+      grid-template-columns: 1fr;
+    }
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  //   portfolio
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+    img {
+      height: 250px !important;
+    }
+  }
+  //   contact
+  .contact-content-con {
+    flex-direction: column;
+    .right-contact {
+      margin-left: 0;
+      margin-top: 2.5rem;
+      .i-c-2 {
+        flex-direction: column;
+        margin-top: 3rem;
+      }
+    }
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item {
+    flex-wrap: wrap;
+  }
+  //   main title
+  .main-title {
+    h2 {
+      font-size: 3.3rem;
+    }
+    .bg-text {
+      font-size: 4.5rem !important;
+    }
+  }
+  //   controls buttons
+  .controls {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control {
+      margin: 1rem 0.3rem;
+    }
+  }
+}
